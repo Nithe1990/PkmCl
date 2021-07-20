@@ -1,0 +1,266 @@
+#dynamic 0x800000
+
+#org @laboratorio
+lockall
+textcolor 0x0
+applymovement 0x4 0x8169347
+waitmovement 0x0
+hidesprite 0x4
+movesprite2 0x4 0x6 0x3
+spritebehave 0x4 0x8
+clearflag 0x2B
+applymovement MOVE_PLAYER 0x816934E
+waitmovement 0x0
+applymovement 0x8 0x81A70B2
+waitmovement 0x0
+clearflag 0x4001
+playsong2 0x0
+fadedefault
+msgbox @rival1 MSG_KEEPOPEN
+closeonkeypress
+pause 0x3C
+msgbox @oak1 MSG_KEEPOPEN
+closeonkeypress
+pause 0x1E
+applymovement 0x8 0x8169357
+waitmovement 0x0
+msgbox @rival2 MSG_KEEPOPEN
+msgbox @oak2 MSG_KEEPOPEN
+
+random 0xC1
+copyvar 0x7FFF LASTRESULT
+compare 0x7FFF 0x0
+if B_= call @venusaur
+compare 0x7FFF 0x1
+if B_= call @charizard
+compare 0x7FFF 0x2
+if B_= call @blastoise
+compare 0x7FFF 0x3
+if B_= call @butterfree
+compare 0x7FFF 0x4
+if B_= call @beedrill
+compare 0x7FFF 0x5
+if B_= call @pidgeot
+compare 0x7FFF 0x6
+if B_= call @raticate
+compare 0x7FFF 0x7
+if B_= call @fearow
+compare 0x7FFF 0x8
+if B_= call @arbok
+compare 0x7FFF 0x9
+if B_= call @raichu
+compare 0x7FFF 0xA
+if B_= call @sandslash
+compare 0x7FFF 0xB
+if B_= call @nidoqueen
+compare 0x7FFF 0xC
+if B_= call @nidoking
+compare 0x7FFF 0xD
+if B_= call @clefable
+compare 0x7FFF 0xE
+if B_= call @ninetales
+compare 0x7FFF 0xF
+if B_= call @wigglytuff
+compare 0x7FFF 0x10
+if B_= call @crobat
+compare 0x7FFF 0x11
+if B_= call @vileplume
+compare 0x7FFF 0x12
+if B_= call @bellosom
+compare 0x7FFF 0x13
+if B_= call @parasect
+compare 0x7FFF 0x14
+if B_= call @venomoth
+compare 0x7FFF 0x15
+if B_= call @dugtrio
+compare 0x7FFF 0x16
+if B_= call @persian
+compare 0x7FFF 0x17
+if B_= call @golduck
+compare 0x7FFF 0x18
+if B_= call @primeape
+compare 0x7FFF 0x19
+if B_= call @arcanine
+compare 0x7FFF 0x1A
+if B_= call @poliwrath
+compare 0x7FFF 0x1B
+if B_= call @politoed
+compare 0x7FFF 0x1C
+if B_= call @alakazam
+compare 0x7FFF 0x1D
+if B_= call @machamp
+compare 0x7FFF 0x1E
+if B_= call @victreebel
+compare 0x7FFF 0x1F
+if B_= call @tentacruel
+compare 0x7FFF 0x20
+if B_= call @golem
+compare 0x7FFF 0x21
+if B_= call @rapidash
+compare 0x7FFF 0x22
+if B_= call @slowbro
+compare 0x7FFF 0x23
+if B_= call @slowking
+compare 0x7FFF 0x24
+if B_= call @magneton
+compare 0x7FFF 0x25
+if B_= call @farfetchd
+compare 0x7FFF 0x26
+if B_= call @dodrio
+compare 0x7FFF 0x27
+if B_= call @dewgong
+compare 0x7FFF 0x28
+if B_= call @muk
+compare 0x7FFF 0x29
+if B_= call @cloyster
+compare 0x7FFF 0x2A
+if B_= call @gengar
+compare 0x7FFF 0x2B
+if B_= call @steelix
+compare 0x7FFF 0x2C
+if B_= call @hypno
+compare 0x7FFF 0x2D
+if B_= call @kingler
+compare 0x7FFF 0x2E
+if B_= call @electrode
+compare 0x7FFF 0x2F
+if B_= call @exeggutor
+compare 0x7FFF 0x30
+if B_= call @marowak
+compare 0x7FFF 0x31
+if B_= call @hitmonlee
+compare 0x7FFF 0x32
+if B_= call @hitmonchan
+compare 0x7FFF 0x33
+if B_= call @hitmontop
+compare 0x7FFF 0x34
+if B_= call @lickitung
+compare 0x7FFF 0x35
+if B_= call @weezing
+compare 0x7FFF 0x36
+if B_= call @rhydon
+compare 0x7FFF 0x37
+if B_= call @blissey
+compare 0x7FFF 0x38
+if B_= call @tangela
+compare 0x7FFF 0x39
+if B_= call @kangaskhan
+compare 0x7FFF 0x3A
+if B_= call @kingdra
+compare 0x7FFF 0x3B
+if B_= call @seaking
+compare 0x7FFF 0x3C
+if B_= call @starmie
+compare 0x7FFF 0x3D
+if B_= call @mrmime
+compare 0x7FFF 0x3E
+if B_= call @scizor
+compare 0x7FFF 0x3F
+if B_= call @jynx
+compare 0x7FFF 0x40
+if B_= call @electabuzz
+compare 0x7FFF 0x41
+if B_= call @magmar
+compare 0x7FFF 0x42
+if B_= call @pinsir
+compare 0x7FFF 0x43
+if B_= call @tauros
+compare 0x7FFF 0x44
+if B_= call @gyarados
+compare 0x7FFF 0x45
+if B_= call @lapras
+compare 0x7FFF 0x46
+if B_= call @ditto
+compare 0x7FFF 0x47
+if B_= call @vaporeon
+compare 0x7FFF 0x48
+if B_= call @jolteon
+compare 0x7FFF 0x49
+if B_= call @flareon
+compare 0x7FFF 0x4A
+if B_= call @espeon
+compare 0x7FFF 0x4B
+if B_= call @umbreon
+compare 0x7FFF 0x4C
+if B_= call @porygon
+compare 0x7FFF 0x4D
+if B_= call @omastar
+compare 0x7FFF 0x4E
+if B_= call @kabutops
+compare 0x7FFF 0x4F
+if B_= call @aerodactyl
+compare 0x7FFF 0x50
+if B_= call @snorlax
+compare 0x7FFF 0x51
+if B_= call @dragonite
+compare 0x7FFF 0x52
+if B_= call @meganium
+compare 0x7FFF 0x53
+if B_= call @typhlosion
+compare 0x7FFF 0x54
+if B_= call @feraligatr
+compare 0x7FFF 0x55
+if B_= call @furret
+compare 0x7FFF 0x56
+if B_= call @noctowl
+compare 0x7FFF 0x57
+if B_= call @ledian
+compare 0x7FFF 0x58
+if B_= call @ariados
+compare 0x7FFF 0x59
+if B_= call @lanturn
+compare 0x7FFF 0x5A
+if B_= call @togetic
+compare 0x7FFF 0x5B
+if B_= call @xatu
+compare 0x7FFF 0x5C
+if B_= call @ampharos
+compare 0x7FFF 0x5D
+if B_= call @azumarill
+compare 0x7FFF 0x5E
+if B_= call @sudowoodo
+compare 0x7FFF 0x5F
+if B_= call @jumpluff
+compare 0x7FFF 0x60
+if B_= call @aipom
+compare 0x7FFF 0x61
+if B_= call @sunflora
+compare 0x7FFF 0x62
+if B_= call @yanma
+compare 0x7FFF 0x63
+if B_= call @quagsire
+compare 0x7FFF 0x64
+if B_= call @murkrow
+compare 0x7FFF 0x65
+if B_= call @misdreavus
+compare 0x7FFF 0x66
+if B_= call @unown
+compare 0x7FFF 0x67
+if B_= call @wobbuffet
+compare 0x7FFF 0x68
+if B_= call @girafarig
+compare 0x7FFF 0x69
+if B_= call @forretress
+compare 0x7FFF 0x6A
+if B_= call @dunsparce
+compare 0x7FFF 0x6B
+if B_= call @gligar
+compare 0x7FFF 0x6C
+if B_= call @granbull
+compare 0x7FFF 0x6D
+if B_= call @qwilfish
+compare 0x7FFF 0x6E
+if B_= call @shuckle
+compare 0x7FFF 0x6F
+if B_= call @heracross
+compare 0x7FFF 0x70
+if B_= call @sneasel
+compare 0x7FFF 0x71
+if B_= call @ursaring
+compare 0x7FFF 0x72
+if B_= call @magcargo
+compare 0x7FFF 0x
+if B_= call @
+'------------------------
+releaseall
+end

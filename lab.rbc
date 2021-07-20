@@ -1,0 +1,79 @@
+'---------------
+#org 0x1692D5
+lockall
+textcolor 0x0
+applymovement 0x4 0x8169347
+waitmovement 0x0
+hidesprite 0x4
+movesprite2 0x4 0x6 0x3
+spritebehave 0x4 0x8
+clearflag 0x2B
+applymovement MOVE_PLAYER 0x816934E
+waitmovement 0x0
+applymovement 0x8 0x81A70B2
+waitmovement 0x0
+clearflag 0x4001
+playsong2 0x0
+fadedefault
+msgbox 0x818E063 MSG_KEEPOPEN '"[rival]: ¡Abuelo!\n¡Estoy harto de..."
+closeonkeypress
+pause 0x3C
+msgbox 0x818E308 MSG_KEEPOPEN '"OAK: ¿[rival]?\nDéjame pensar...\p..."
+closeonkeypress
+pause 0x1E
+applymovement 0x8 0x8169357
+waitmovement 0x0
+msgbox 0x818E089 MSG_KEEPOPEN '"[rival]: ¡Oye abuelo!\n¿Y yo qué?"
+msgbox 0x818E40C MSG_KEEPOPEN '"OAK: ¡Tranquilo, [rival]!\n¡Te dar..."
+setvar 0x4055 0x2
+releaseall
+end
+
+
+'---------
+' Strings
+'---------
+#org 0x18E063
+= [rival]: ¡Abuelo!\n¡Estoy harto de esperar!
+
+#org 0x18E308
+= OAK: ¿[rival]?\nDéjame pensar...\p¡Ah, sí! Te pedí que vinieras.\nEspera...\p¡[player], toma!\p¡Aquí hay tres POKéMON!\p¡Bien!\p¡Están dentro de las POKé BALLS!\p¡Cuando yo era joven, era un\nbuen ENTRENADOR de POKéMON!\pPero ahora sólo me quedan tres.\nTe daré uno. ¿Cuál quieres?
+
+#org 0x18E089
+= [rival]: ¡Oye abuelo!\n¿Y yo qué?
+
+#org 0x18E40C
+= OAK: ¡Tranquilo, [rival]!\n¡Te daré otro a ti!
+
+
+'-----------
+' Movements
+'-----------
+#org 0x169347
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0xFE 'End of Movements
+
+#org 0x16934E
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0x11 'Step Up (Normal)
+#raw 0xFE 'End of Movements
+
+#org 0x1A70B2
+#raw 0x2E 'Face Up (Delayed)
+#raw 0xFE 'End of Movements
+
+#org 0x169357
+#raw 0x26 'Step on the Spot Up (Faster)
+#raw 0x26 'Step on the Spot Up (Faster)
+#raw 0xFE 'End of Movements
